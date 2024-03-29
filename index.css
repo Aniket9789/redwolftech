@@ -739,7 +739,7 @@ html {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    bottom: 25rem;
+    bottom: 27rem;
     right: 14rem;
   }
 
@@ -1018,6 +1018,7 @@ html {
     text-align: center;
     position: relative;
     left: 2rem;
+    max-width: 20rem;
   }
 
   #finance2 {
@@ -1030,6 +1031,7 @@ html {
     text-align: start;
     position: relative;
     left: 1rem;
+    max-width: 20rem;
   }
 
   #finance3 {
@@ -1043,6 +1045,7 @@ html {
     text-align: start;
     position: relative;
     left: 1rem;
+    max-width: 19rem;
     top: 16rem;
   }
 
