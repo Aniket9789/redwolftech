@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Redwolfhitech</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary h-auto" style="opacity: 40%;position: fixed;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html"><img
+                    src="https://redwolfhitech.com/assets/img/Red_Wolf_Hi-Tech_Pvt.Ltd_Header_logo.png" alt=""
+                    class="wolflogo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/index.html" id="links">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/about.html" id="links">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/blogs.html" id="links">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/services.html" id="links">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <CONTACT class="nav-link active" href="/contact.html" id="links">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://portal.tcopsztpro.in/" id="links">LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="first-line">
+        <div class="text-overlay">RedWolf Hi-Tech: Revolutionizing Technology with Innovation</div>
+
+        <div class="slider-container">
+            <div class="slider">
+                <img src="images/1stpic.jpg" alt="Image 1">
+                <img src="images/3rdpic.jpg" alt="Image 2">
+                <img src="images/4thpic.jpg" alt="Image 3">
+            </div>
+            <div class="first-paragraph">
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="parent">
+        <img src="images/sliderpic2.jpg" alt="" class="about-img">
+        <h1>Our-Mission</h1>
+        <div class="page">
+            <p><b>At RedWolf Hi-Tech, our mission is to empower individuals and businesses by providing cutting-edge
+                    technological solutions that enhance efficiency, productivity, and convenience. We strive to bridge
+                    the
+                    gap between innovation and accessibility, ensuring that our products and services cater to the
+                    diverse
+                    needs of our clientele. With a customer-centric approach, we aim to create value-driven solutions
+                    that
+                    positively impact the lives of people around the globe.</b></p>
+        </div>
+
+        <div class="parent2">
+            <img src="images/vission.jpg" alt="" class="about-img2">
+            <h2>Our-Vission</h2>
+            <div class="page2">
+                <p><b>At RedWolf Hi-Tech, our mission is to empower individuals and businesses by providing cutting-edge
+                        technological solutions that enhance efficiency, productivity, and convenience. We strive to
+                        bridge
+                        the
+                        gap between innovation and accessibility, ensuring that our products and services cater to the
+                        diverse
+                        needs of our clientele. With a customer-centric approach, we aim to create value-driven
+                        solutions
+                        that
+                        positively impact the lives of people around the globe.</b></p>
+            </div>
+            <div class="child2">
+                <h2 class="mission-head">Founders and Leadership</h2>
+                <!--<div class="mission-para">
+                        <p>The foundation of RedWolf Hi-Tech was laid by three dynamic individuals, each bringing unique
+                            expertise and vision to the table.
+    
+                        </p>-->
+
+            </div>
+            <div>
+                <img src="images/3rdpic.jpg" alt="" class=" missionimg">
+            </div>
+            <div class="mission-para">
+                <p>The foundation of RedWolf Hi-Tech was laid by three dynamic individuals, each bringing unique
+                    expertise and vision to the table.
+
+                </p>
+
+            </div>
+            <script>
+                let slideIndex = 0;
+
+                function showSlide() {
+                    const slides = document.querySelectorAll('.slider img');
+                    if (slideIndex >= slides.length) {
+                        slideIndex = 0;
+                    } else if (slideIndex < 0) {
+                        slideIndex = slides.length - 1;
+                    }
+
+                    slides.forEach((slide, index) => {
+                        if (index === slideIndex) {
+                            slide.style.display = 'block';
+                        } else {
+                            slide.style.display = 'none';
+                        }
+                    });
+                }
+
+                function nextSlide() {
+                    slideIndex++;
+                    showSlide();
+                }
+
+                function prevSlide() {
+                    slideIndex--;
+                    showSlide();
+                }
+
+                showSlide();
+
+                // Automatic slide change every 5 seconds
+                setInterval(nextSlide, 5000);
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>

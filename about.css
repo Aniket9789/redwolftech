@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    background-color: #00000024;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    height: 7rem;
+}
+
+
+.logo {
+    flex-grow: 1;
+    /* The logo takes as much space as it needs */
+}
+
+.logo img {
+    max-height: 80px;
+    width: 6rem;
+    margin-left: 20px;
+}
+
+.nav-links {
+    display: flex;
+    margin-right: 25px;
+    gap: 34px;
+    margin-top: 22px;
+    height: 41px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+
+/* /slider image/ */
+
+.text-overlay {
+    position: absolute;
+    top: 82px;
+    left: 29rem;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 64px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 10px;
+    z-index: 1;
+}
+
+.first-paragraph {
+    color: white;
+}
+
+.slider-container {
+    position: relative;
+    width: 106rem;
+    /* max-width: 600px; */
+    margin: 0 auto;
+    overflow: hidden;
+    margin-left: -8px;
+    margin-top: -1rem;
+    height: 36rem;
+}
+
+.slider {
+    display: flex;
+    width: 106rem;
+    height: 26rem;
+    margin-left: 0rem;
+    transition: transform 0.1s ease;
+
+}
+
+.slider img {
+    width: 106rem;
+
+    height: 36rem;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+
+/* /about css from blog/ */
+
+
+.about-img {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    transition: 1s ease;
+    width: 26rem;
+}
+
+.about-img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
+.mission-head {
+    color: red;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 7rem;
+    margin-left: -3rem;
+
+}
+
+.mission-para {
+
+    text-align: center;
+    color: white;
+    margin-left: 2rem;
+    margin-top: -15rem;
+    font-size: 2rem;
+}
+
+.missionimg {
+    width: 64rem;
+    height: 21rem;
+    margin-top: 3rem;
+    margin-left: 11rem;
+    border-radius: 2rem;
+
+}
+
+.child1 {
+    margin-top: 14rem;
+    margin-left: 7rem;
+
+}
+
+h1 {
+    color: red;
+    width: 31rem;
+    font-size: 2rem;
+    margin-left: 32rem;
+    margin-top: -16rem;
+}
+
+p {
+    color: white;
+    width: 45rem;
+    margin-left: 22rem;
+}
+
+.page {
+    margin-left: 10rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.parent2 {
+    margin-left: 3rem;
+    margin-left: 1rem;
+}
+
+.about-img2 {
+    margin-left: 56rem;
+    margin-top: 10rem;
+    transition: 1s ease;
+    width: 26rem;
+    height: 16rem;
+}
+
+.about-img2:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
+.page2 {
+    margin-left: -21rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    color: red;
+    font-size: 2rem;
+    margin-top: -16rem;
+    margin-left: 1rem;
+}
+
+.missionimg {
+    width: 82rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+}
+
+.wolflogo {
+    width: 7rem;
+}
+
+#wolful {
+    position: relative;
+    left: 67rem;
+
+}
+
+#links {
+    color: black;
+    font-size: 20px;
+}
+
+.redbanner {
+    width: 100%;
+}
