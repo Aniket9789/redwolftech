@@ -1,62 +1,36 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: black;
-}
-
-nav {
-    display: flex;
-    background-color: #00000024;
-    padding: 10px;
-    position: absolute;
-    width: 100%;
-    z-index: 1000;
-    height: 7rem;
-}
-
-
-.logo {
-    flex-grow: 1;
-    /* The logo takes as much space as it needs */
-}
-
-.logo img {
-    max-height: 80px;
-    width: 6rem;
-    margin-left: 20px;
-}
-
-.nav-links {
-    display: flex;
-    margin-right: 25px;
-    gap: 34px;
-    margin-top: 22px;
-    height: 41px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    margin-right: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-
-/* /slider image/ */
-
 .text-overlay {
     position: absolute;
-    top: 82px;
-    left: 29rem;
+    top: 267px;
+    left: 31rem;
     transform: translateX(-50%);
     color: white;
-    font-size: 64px;
-    /* background-color: rgba(0, 0, 0, 0.5); */
+    font-size: 50px;
     padding: 10px;
     z-index: 1;
+    text-align: start;
+}
+
+.wolflogo {
+    width: 7rem;
+}
+
+#wolful {
+    position: relative;
+    left: 67rem;
+
+}
+
+#links {
+    color: black;
+    font-size: 20px;
+}
+
+.redbanner {
+    width: 100%;
+}
+
+.insidebanner2 {
+    width: 100%;
 }
 
 .first-paragraph {
@@ -65,18 +39,16 @@ nav a {
 
 .slider-container {
     position: relative;
-    width: 106rem;
-    /* max-width: 600px; */
+    width: 86rem;
     margin: 0 auto;
     overflow: hidden;
     margin-left: -8px;
     margin-top: -1rem;
-    height: 36rem;
 }
 
 .slider {
     display: flex;
-    width: 106rem;
+    width: 86rem;
     height: 26rem;
     margin-left: 0rem;
     transition: transform 0.1s ease;
@@ -84,9 +56,9 @@ nav a {
 }
 
 .slider img {
-    width: 106rem;
+    width: 87rem;
 
-    height: 36rem;
+    height: auto;
 }
 
 .prev,
@@ -111,8 +83,6 @@ nav a {
 }
 
 
-
-/* /about css from blog/ */
 
 
 .about-img {
@@ -142,6 +112,7 @@ nav a {
 
     text-align: center;
     color: white;
+    /* text-align: center; */
     margin-left: 2rem;
     margin-top: -15rem;
     font-size: 2rem;
@@ -208,7 +179,7 @@ p {
 }
 
 h2 {
-    color: red;
+    color: white;
     font-size: 2rem;
     margin-top: -16rem;
     margin-left: 1rem;
@@ -221,21 +192,419 @@ h2 {
 
 }
 
-.wolflogo {
-    width: 7rem;
-}
 
-#wolful {
-    position: relative;
-    left: 67rem;
+* {
+    margin: 0;
+    padding: 0;
 
 }
 
-#links {
-    color: black;
-    font-size: 20px;
+body {
+    background-color: black;
 }
 
-.redbanner {
+#rohit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    height: 2rem;
+}
+
+h1 {
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.para-founder {
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.para-founder3 {
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.hed-found3 {
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 4rem;
+}
+
+.card-container3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 61rem;
+
+    max-width: 900px;
+}
+
+.card3 {
+    position: relative;
+    width: 17rem;
+    height: 17rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+
+}
+
+.card3:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card3 img {
+    width: 100%;
+    height: 17rem;
+}
+
+.card-content3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    height: 2rem;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.card3:hover .card-content3 {
+    opacity: 1;
+}
+
+
+.description-container3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 61rem;
+
+    color: white;
+}
+
+.description3 {
+    width: calc(100% / 3 - 20px);
+    text-align: left;
+}
+
+.description3 h3 {
+    margin-top: 0;
+}
+
+/*  */
+.head-journey3 {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 3rem;
+}
+
+.para-journey3 {
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    width: 61rem;
+    margin-left: 15rem;
+}
+
+#para-jou {
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    width: 61rem;
+
+    margin-left: -3rem;
+}
+
+#hed1 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+#hed2 {
+    margin-top: 1rem;
+    margin-left: 7rem;
+}
+
+#hed3 {
+    margin-top: 3rem;
+    margin-left: 1rem
+}
+
+#hed4 {
+    margin-top: 1rem;
+    margin-left: 7rem;
+}
+
+/*  */
+
+.container13 {
+    position: relative;
+    width: 24rem;
+}
+
+.image3 {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#skribbit {
+    text-align: left;
+    margin-left: 7rem;
+    margin-top: 7rem;
+}
+
+.overlay3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: blue;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.container13:hover .overlay3 {
+    width: 100%;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+#cont1 {
+    margin-left: 2rem;
+}
+
+#cont2 {
+    margin-left: 59rem;
+    margin-top: 12rem;
+}
+
+#cont3 {
+    margin-left: 2rem;
+    margin-top: 9rem;
+}
+
+#cont4 {
+    margin-left: 59rem;
+    margin-top: 7rem;
+}
+
+.content13 {
+
+    color: white;
+    margin-top: -16rem;
+    width: 55rem;
+    margin-left: 28rem;
+    text-align: left;
+}
+
+#box2 {
+    margin-left: 2rem;
+    margin-top: -199px;
+
+}
+
+#box4 {
+    margin-left: 2rem;
+}
+
+.journey-detail3 {
+    margin-top: 6rem;
+}
+
+#jou {
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.head3 {
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.head-customer3 {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 13rem;
+}
+
+#chirag2 {
+    color: white;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    font-size: 24px;
+}
+
+#pankaj3 {
+    color: white;
+    text-align: center;
+    margin-left: -1rem;
+    /* text-decoration: underline; */
+    margin-top: 0rem;
+    width: 20rem;
+}
+
+#conclu {
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#para-conclu {
+    color: white;
+    text-align: justify;
+    margin-top: -16rem;
+    margin-left: 10rem;
+    width: 51rem;
+    height: 8rem;
+}
+
+#cca {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: -11rem;
+    width: 36rem;
+}
+
+.img-customer3 {
+    margin-left: -14rem;
+    margin-top: 3rem;
+
+    height: 28rem;
+    width: 100rem;
+
+}
+
+.para-customer3 {
+    color: white;
+    margin-top: -23rem;
+    width: 56rem;
+    margin-left: 24rem;
+
+}
+
+#img-cust {
+    height: 28rem;
+    width: 97rem;
+    border-radius: 2rem;
+}
+
+.conclusion3 {
+    margin-top: 17rem;
+}
+
+.head-conclusion3 {
+    color: white;
+
+}
+
+.para-conclusion3 {
+    color: white;
+    text-align: justify;
+    margin-top: -16rem;
+    margin-left: 10rem;
+    width: 51rem;
+    height: 8rem;
+}
+
+.img1-con {
+    height: 27rem;
+    width: 86rem;
+}
+
+.founder3 {
+    margin-top: 25rem;
+}
+
+.journey3 {
+    margin-top: 22rem;
+}
+
+#rohit1 {
+    color: white;
+    width: 19rem;
+    margin-left: 0rem;
+}
+
+#chirag {
+    color: white;
+    width: 18rem;
+    margin-left: 0rem;
+}
+
+#pankaj1 {
+    text-align: left;
+    margin-left: 0rem;
+    color: white;
+}
+
+#rohit2 {
+    color: white;
+    font-size: 24px;
+    margin-top: 0rem;
+    margin-left: 1rem;
+}
+
+#ev {
+    margin-left: 7rem;
+
+    text-align: left;
+    margin-top: -3rem;
+}
+
+#pankaj2 {
+    color: white;
+    font-size: 24px;
+    margin-top: 0rem;
+    width: 19rem;
+    margin-left: 0rem;
+}
+
+/* responsive */
+
+@media screen and(max-width:500px) {
+    .slider-container {
+        display: flex;
+    }
 }
