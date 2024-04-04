@@ -15,7 +15,7 @@ nav {
   height: 40rem;
 }
 
-    .bg-body-tertiary {
+.bg-body-tertiary {
   background-color: black !important;
 }
 
@@ -677,6 +677,7 @@ html {
   height: 23rem;
   left: 14rem;
   position: relative;
+  border-radius: 1rem;
 }
 
 .evbanner2 {
@@ -685,6 +686,7 @@ html {
   left: 17rem;
   position: relative;
   top: -3rem;
+  border-radius: 1rem;
 
 }
 
@@ -694,6 +696,7 @@ html {
   left: 21rem;
   position: relative;
   top: -2rem;
+  border-radius: 1rem;
 }
 
 .ev {
@@ -711,7 +714,13 @@ html {
 
 /* responsive banner2 */
 @media screen and (max-width: 500px) {
+  .a {
+    position: relative;
+    bottom: 13rem;
+  }
+
   .content {
+
     /* padding: 10px; */
     display: flex;
     color: white;
